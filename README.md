@@ -1,6 +1,6 @@
 # TSUNIA - Tecnologia Sem Um Nome Interessante Ainda
 
-[<img title="TSUNIA" src="http://i.imgur.com/RcSJnK4.jpg" width="180px" alt="TSUNIA logo"/>](https://github.com/guilhermesteves/tsunia)
+[<img title="TSUNIA" src="http://i.imgur.com/txVNoNA.jpg" width="300px" alt="TSUNIA logo"/>](https://github.com/guilhermesteves/tsunia)
 
 O objetivo desse projeto é prover uma arquitetura (boilerplate) de projeto **front-end** com as seguintes tecnologias:
 
