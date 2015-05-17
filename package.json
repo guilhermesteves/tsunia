@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git@github.com:guilhermesteves/tsunia.git"
   },
+  "bugs": {
+    "url": "https://github.com/guilhermesteves/tsunia/issues"
+  },
   "author": "Guilherme Esteves <guilhermesteves@icloud.com>",
   "dependencies": {},
   "devDependencies": {
