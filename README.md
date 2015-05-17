@@ -14,4 +14,13 @@ Seguindo as diretrizes do [Material Design](http://www.google.com/design/spec/ma
 
 As documentações são integradas na build e usam o [KSS](http://warpspire.com/kss/) e o [JsDoc](http://usejsdoc.org/).
 
+# TODO
+
+- [Electron](https://github.com/atom/electron/) integração (in build and separated)
+- [Angulartics](http://luisfarzati.github.io/angulartics/) no projeto
+
+# License
+
+Copyright (c) 2015 Guilherme Esteves Licensed under the MIT License.
+
 
