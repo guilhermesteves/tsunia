@@ -1,4 +1,6 @@
-# TSUNIA - Tecnologia Sem Um Nome Interessante Ainda
+# TSUNIA - Tecnologia Sem Um Nome Interessante Ainda [![Build Status](https://travis-ci.org/guilhermesteves/tsunia.svg)](https://travis-ci.org/guilhermesteves/tsunia)
+
+### [English Version README](./README-EN.md)
 
 [<img title="TSUNIA" src="http://i.imgur.com/txVNoNA.jpg" width="300px" alt="TSUNIA logo"/>](https://github.com/guilhermesteves/tsunia)
 
@@ -16,7 +18,8 @@ As documentações são integradas na build e usam o [KSS](http://warpspire.com/
 
 # TODO
 
-- [Electron](https://github.com/atom/electron/) integração (in build and separated)
+- [Travis CI](https://travis-ci.org/) integração
+- [Electron](https://github.com/atom/electron/) integração (na build e separado)
 - [Angulartics](http://luisfarzati.github.io/angulartics/) no projeto
 
 # License
