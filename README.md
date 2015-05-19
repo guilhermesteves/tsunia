@@ -16,6 +16,18 @@ Seguindo as diretrizes do [Material Design](http://www.google.com/design/spec/ma
 
 As documentações são integradas na build e usam o [KSS](http://warpspire.com/kss/) e o [JsDoc](http://usejsdoc.org/).
 
+# Instalação
+
+Para instalar, basta clonar o projeto
+
+    git clone git@github.com:guilhermesteves/tsunia.git
+    
+E rodar o **npm** e o **bower**:
+
+    npm install && bower install
+    
+Tudo pronto!
+
 # TODO
 
 - [Travis CI](https://travis-ci.org/) integração
