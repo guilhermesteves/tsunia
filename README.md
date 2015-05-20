@@ -1,10 +1,12 @@
-# TSUNIA - Tecnologia Sem Um Nome Interessante Ainda [![Build Status](https://travis-ci.org/guilhermesteves/tsunia.svg)](https://travis-ci.org/guilhermesteves/tsunia)
+# TSUNIA
 
-### [English Version README](./README-EN.md)
+Obs: TSUNIA is an acronym for Tecnology Without An Interesting Name Yet (in portuguese: **T**ecnologia **S**em **U**m **N**ome **I**nteressante **A**inda)
+ 
+### [Versão em Português do README](./README-PTBR.md)
 
 [<img title="TSUNIA" src="http://i.imgur.com/txVNoNA.jpg" width="300px" alt="TSUNIA logo"/>](https://github.com/guilhermesteves/tsunia)
 
-O objetivo desse projeto é prover uma arquitetura (boilerplate) de projeto **front-end** com as seguintes tecnologias:
+The objective of this project is to provide a **front-end** architecture (boilerplate) with the following technologies:
 
 - [AngularJS](https://angularjs.org/)
 - [Jade](http://jade-lang.com/)
@@ -12,105 +14,103 @@ O objetivo desse projeto é prover uma arquitetura (boilerplate) de projeto **fr
 - [Bower](http://bower.io/)
 - [Grunt](http://gruntjs.com/)
 
-Seguindo as diretrizes do [Material Design](http://www.google.com/design/spec/material-design/introduction.html) com o [Material Angular](https://material.angularjs.org/), o projeto é estruturado de maneira modular, tendo a sua arquitetura facilmente reaproveitável.
+Following [Material Design's](http://www.google.com/design/spec/material-design/introduction.html) guidelines with [Material Angular](https://material.angularjs.org/), the project is structured in a modular fashion, with its easily reusable architecture.
 
-As documentações são integradas na build e usam o [KSS](http://warpspire.com/kss/) e o [JsDoc](http://usejsdoc.org/).
+The documentation is integrated into the build and use [KSS](http://warpspire.com/kss/) and [JsDoc](http://usejsdoc.org/).
 
-# Instalação
+# Installation
 
-Para instalar, basta clonar o projeto
+You just need to clone the project
 
     git clone git@github.com:guilhermesteves/tsunia.git
     
-E rodar o **npm** e o **bower**:
+Run **npm** and **bower**:
 
     npm install && bower install
     
-Tudo pronto!
+Everything is ready!
 
-# Rodando o projeto
+# Running the project
 
 ## Endpoints
 
 ## Grunt
 
-Esse projeto tem diversas maneiras de ser executado pelo Grunt, as principais tarefas são:
+This project has several ways to run via Grunt, the main tasks are:
 
-- **Server** - Executando `grunt server`
-- **Build** - Executando `grunt build`
-- **Test** - Executando `grunt test`
-- **Default** - Executando `grunt`
+- **Server** - Running `grunt server`
+- **Build** - Running `grunt build`
+- **Test** - Running `grunt test`
+- **Default** - Running `grunt`
 
 ### Server
 
-Gera uma versão de desenvolvimento do seu app e faz reload automático ao detectar mudanças. Os arquivos são salvos em um diretório temporária e não é gerada uma versão de produção.
+Generates a development version of your app and makes automatic reload to detect changes. The files are saved in a temporary directory and a production version is not generated.
 
 #### Urls
 
-Essa tarefa usa por padrão, a url definida como **development**, no seu **endpoints.js**. Caso queira usar a versão de produção apontada para o servidor de homologação ou produção, basta usar os seguintes comandos com a flag `--url`:
+This task uses by default the url set to **development** in your **endpoints.js**. If you want to use the production version pointed to the ratification or production server, simply use the following commands with the flag `--url`:
 
-- Homologação
+- Ratification
 
-Para rodar em homologação, as seguintes flags são válidas: `--url:r`, `--url:rat` e `--url:ratification`
+To run on ratification, the following flags are valid: `--url:r`, `--url:rat` e `--url:ratification`
 
-Exemplo: `grunt server --url:ratification`
+Example: `grunt server --url:ratification`
 
-- Produção
+- Production
 
-Para rodar em produção, as seguintes flags são válidas: `--url:p`, `--url:prod` e `--url:production`
+To run on production, the following flags are valid: `--url:p`, `--url:prod` e `--url:production`
 
-Exemplo: `grunt server --url:production`
+Example: `grunt server --url:production`
 
-**OBS:** Não será feita uma versão de produção e os arquivos ficam em um diretório temporário, essa flag só muda o url do servidor.
+**OBS:** There wont be a production version and the files are in a temporary directory, this flag only changes the server url.
 
-Se quiser montar uma versão de produção, use a tarefa **Build** ou a flag **dist**.
+If you want to mount a production version, use the **Build** task or the **dist** flag.
 
 #### Dist
 
-Existe a opção de gerar automaticamente a build de produção junto com o servidor a cada mudança (apesar de não recomendado), usando a opção **dist**. Basta rodar `grunt server:dist`.
+There is the option to automatically generate production build along with the server every change (though not recommended), using a **dist** option. Just run `grunt server:dist`.
 
 ### Build
 
-Gera uma versão de produção do seu app, com tudo minificado e otimizado.
+Generates a production version of its app, with all minified and optimized.
 
 #### Urls
 
-Essa tarefa usa por padrão, a url definida como **production**, no seu **endpoints.js**. Caso queira usar a versão de produção apontada para o servidor de desenvolvimento ou homologação, basta usar os seguintes comandos com a flag `--url`:
+This task uses by default the url set to **production**, in your **endpoints.js**. If you want to use the production version pointed to the development or ratification server, just use the following commands with the flag `--url`:
 
-- Desenvolvimento
+- Development
 
-Para rodar em modo desenvolvimento, as seguintes flags são válidas: `--url:d`, `--url:dev` e `--url:development`
+To run on development, the following flags are valid: `--url:d`, `--url:dev` e `--url:development`
 
-Exemplo: `grunt build --url:development`
+Example: `grunt build --url:development`
 
-- Homologação
+- Ratification
 
-Para rodar em homologação, as seguintes flags são válidas: `--url:r`, `--url:rat` e `--url:ratification`
+To run on ratification, the following flags are valid: `--url:r`, `--url:rat` e `--url:ratification`
 
-Exemplo: `grunt build --url:ratification`
+Example: `grunt server --url:ratification`
 
-**OBS:** Os arquivos serão minificados e ofuscados como a versão de produção, essa flag só muda o url do servidor.
+**OBS:** The files wont be minified and obfuscated as the production version, this flag only changes the server url.
 
 ### Test
 
-Ao rodar essa tarefa, todos os testes serão realizados. 
+When running this task, all tests will be performed.
 
 #### Watch
 
-Existe a opção **watch** que monitora por mudanças e executa novamente os testes. Basta rodar `grunt test:watch`.
+There is a **watch** option that monitors for changes and rerun the tests. Just run `grunt test:watch`.
 
 ### Default
 
-Essa tarefa roda as tarefas **Build** e **Test**.
+This task runs the tasks **Build** and **Test**.
 
 # TODO
 
-- [Travis CI](https://travis-ci.org/) integração
-- [Electron](https://github.com/atom/electron/) integração (na build e separado)
-- [Angulartics](http://luisfarzati.github.io/angulartics/) no projeto
+- [Travis CI](https://travis-ci.org/) integration
+- [Electron](https://github.com/atom/electron/) integration (in build and apart)
+- [Angulartics](http://luisfarzati.github.io/angulartics/) in project
 
 # License
 
 Copyright (c) 2015 Guilherme Esteves Licensed under the MIT License.
-
-
