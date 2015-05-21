@@ -34,6 +34,10 @@ Everything is ready!
 
 ## Endpoints
 
+Endpoints are the urls of the backend server as the application connects. You need to rename the [endpoints-example.js](./grunt/endpoints-example.js) to **endpoints.js** and put your development, ratification and production urls. 
+
+By default, when you run the `grunt server` task, the development url will be used and when you run`grunt build` or `grunt`, the production url will be used. To change it see the flag `--url` below.
+
 ## Grunt
 
 This project has several ways to run via Grunt, the main tasks are:
