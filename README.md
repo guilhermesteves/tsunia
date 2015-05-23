@@ -57,13 +57,13 @@ This task uses by default the url set to **development** in your **endpoints.js*
 
 - Ratification
 
-To run on ratification, the following flags are valid: `--url:r`, `--url:rat` e `--url:ratification`
+To run on ratification, the following flags are valid: `--url:r`, `--url:rat` and `--url:ratification`
 
 Example: `grunt server --url:ratification`
 
 - Production
 
-To run on production, the following flags are valid: `--url:p`, `--url:prod` e `--url:production`
+To run on production, the following flags are valid: `--url:p`, `--url:prod` and `--url:production`
 
 Example: `grunt server --url:production`
 
@@ -85,13 +85,13 @@ This task uses by default the url set to **production**, in your **endpoints.js*
 
 - Development
 
-To run on development, the following flags are valid: `--url:d`, `--url:dev` e `--url:development`
+To run on development, the following flags are valid: `--url:d`, `--url:dev` and `--url:development`
 
 Example: `grunt build --url:development`
 
 - Ratification
 
-To run on ratification, the following flags are valid: `--url:r`, `--url:rat` e `--url:ratification`
+To run on ratification, the following flags are valid: `--url:r`, `--url:rat` and `--url:ratification`
 
 Example: `grunt server --url:ratification`
 
